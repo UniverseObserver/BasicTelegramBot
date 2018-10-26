@@ -28,7 +28,7 @@ def stalk(bot, update):
                 copy_res = copy_res.split('T')[0]
             profile += str(copy.title().replace("_", " ")) + ": " + str(copy_res) + "\n"
     profile += pic
-    update.message.reply_text(profile)
+    update.message.reply_text('x')
 
 dispatcher.add_handler(MessageHandler(Filters.text, stalk))
 
